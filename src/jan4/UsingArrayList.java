@@ -28,10 +28,10 @@ public class UsingArrayList {
 		driver.findElement(By.xpath("//button[contains(text(),'I am a Fresher')]")).click();
 		Thread.sleep(6000);
 		driver.close();
-			}
-		
-
 	}
+
+
+}
 
 
 

@@ -25,7 +25,7 @@ public class Table1 {
         {
         	//get collection of columns in td tag
         	List<WebElement>cols=rows.get(i).findElements(By.tagName("td"));
-        	System.out.println("Row No.::"+i+"  "+"column No.:"+cols.size());	
+        	System.out.println("Row No.::"+i+"  "+"columns::"+cols.size());	
 		}
         driver.close();
 	}

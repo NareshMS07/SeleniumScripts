@@ -22,18 +22,18 @@ public class UsingIterator {
 		Iterator<String>x=allwindows.iterator();
 		while (x.hasNext()) 
 		{
-		String child=x.next();
-		if (!parent.equals(child)) 
-		{
-		//switch to child
-			String pagetitle=driver.switchTo().window(child).getTitle();
-			System.out.println(pagetitle);
-			driver.manage().window().maximize();
-			Thread.sleep(5000);
-			driver.close();
+			String child=x.next();
+			if (!parent.equals(child)) 
+			{
+				//switch to child
+				String pagetitle=driver.switchTo().window(child).getTitle();
+				System.out.println(pagetitle);
+				driver.manage().window().maximize();
+				Thread.sleep(5000);
+				driver.close();
+			}
 		}
-		}
-      // switch to parent
+		// switch to parent
 		driver.switchTo().window(parent);
 		Thread.sleep(6000);
 		driver.findElement(By.xpath("//input[@class='orangeBtn bifurLightBox']")).click();

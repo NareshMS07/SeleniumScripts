@@ -20,7 +20,7 @@ public class ArrayList_IntDemo {
 		Iterator<Integer>x=num.iterator();
 		while (x.hasNext()) 
 		{
-		System.out.println(x.next());	
+			System.out.println(x.next());	
 		}
 
 	}

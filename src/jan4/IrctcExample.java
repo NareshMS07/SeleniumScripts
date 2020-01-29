@@ -24,17 +24,17 @@ public class IrctcExample {
 		Iterator<String>x=brw.iterator();
 		while (x.hasNext()) 
 		{
-		//switch to child
+			//switch to child
 			String child=x.next();
 			if (!parent.equals(child)) 
 			{
-			String pagetitle=driver.switchTo().window(child).getTitle();
-			System.out.println(pagetitle);
-			Thread.sleep(5000);
-			driver.close();
+				String pagetitle=driver.switchTo().window(child).getTitle();
+				System.out.println(pagetitle);
+				Thread.sleep(5000);
+				driver.close();
 			}
 		}
-//switch to parent
+		//switch to parent
 		driver.switchTo().window(parent);
 		driver.findElement(By.xpath("//input[@placeholder='From*']")).sendKeys("HYDERABAD DECAN - HYB");
 		Thread.sleep(6000);

@@ -19,7 +19,7 @@ public class ArrayList_Demo {
 		Iterator<String>x=str.iterator();
 		while (x.hasNext()) 
 		{
-		System.out.println(x.next());	
+			System.out.println(x.next());	
 		}
 	}
 
